@@ -27,8 +27,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/calendar', function () {
-    return view('full-calender');
-});
+    return view('calendar');
+})->middleware('auth:sanctum');
 
 Route::get('/groups', function () {
     return view('groups');

@@ -25,9 +25,4 @@ class HomeController extends Controller
     {
         return view('home');
     }
-
-    public function getView(){
-        return view('/dashboard');//sent data to view
-    }
-
 }
