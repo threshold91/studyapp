@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FullCalenderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,8 +28,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::get('/calendar', function () {
-    return view('full-calender');
-});
+    return view('full-calender'); 
+})->middleware(['auth:sanctum', 'verified']);
 
 Route::get('/groups', function () {
     return view('groups');
@@ -41,3 +42,6 @@ Route::get('/music', function () {
 Route::get('/statistics', function () {
     return view('statistics');
 })->middleware('auth:sanctum');
+
+Route::get('full-calender', [FullCalenderController::class, 'index']);
+Route::post('full-calender/action', [FullCalenderController::class, 'action']);
