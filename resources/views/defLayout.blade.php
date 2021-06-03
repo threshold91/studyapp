@@ -83,7 +83,7 @@
 	
 	</div>
     <div class="min-vh-100 col-sm-12  col-md-12  col-lg-10 col-xl-10 ">
-			<div class="row">	
+			<div class="row" id="yield">	
 				@yield('main')
 				@yield('calendar')
 				@yield('groups')
@@ -92,6 +92,9 @@
 			</div>			
 	</div>
   </div>
+
 </div>
 
 </body>
+
+

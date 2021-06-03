@@ -29,19 +29,19 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/calendar', function () {
     return view('full-calender'); 
-})->middleware(['auth:sanctum', 'verified']);
+});
 
 Route::get('/groups', function () {
     return view('groups');
-})->middleware(['auth:sanctum', 'verified']);
+});
 
 Route::get('/music', function () {
     return view('music');
-})->middleware('auth:sanctum');
+});
 
 Route::get('/statistics', function () {
     return view('statistics');
-})->middleware('auth:sanctum');
+});
 
 Route::get('full-calender', [FullCalenderController::class, 'index']);
 Route::post('full-calender/action', [FullCalenderController::class, 'action']);
