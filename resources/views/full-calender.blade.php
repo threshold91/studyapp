@@ -1,5 +1,7 @@
 @extends('defLayout')
 	@section('calendar')	
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+
 		<div class="container">
 			<br />
 			
@@ -14,10 +16,10 @@
 		$(document).ready(function () {
 
 			$.ajaxSetup({
-				headers:{
-					'X-CSRF-TOKEN' : $('meta[name="csrf-token"]').attr('content')
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 				}
-			});
+				});
 
 			var calendar = $('#calendar').fullCalendar({
 				editable:true,

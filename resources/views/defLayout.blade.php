@@ -26,8 +26,9 @@
 		</div>
 		<div class="container linkovi">
 			<div class="form-group">
-				<img class="profilna" src="img/prof.png" alt="image" />
+				<img class="profilna" src="{{ Auth::user()->profile_photo_path }}" alt="image" />
 			</div>
+			
 			<ul class="nav flex-column justify-content-center">
 				{{ Auth::user()->name }}
 					<li class="nav-item">

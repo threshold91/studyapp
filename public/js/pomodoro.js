@@ -1,4 +1,4 @@
-<script>
+<script> 
 	var pomodoro = {
     started : false,
     minutes : 0,
