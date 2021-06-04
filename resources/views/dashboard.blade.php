@@ -21,7 +21,7 @@
 									"To me, you are perfect.",
 									"Remember, no man is a failure who has friends.",
 									"If you want to win you cannot lose!",
-									"You will ride eternal, shiny and chrome."
+									"You will ride eternal, shiny and chrome.",
 									"In every job that must be done there is an element of fun.",
 									"Even miracles take a little time.",
 									"Anything is possible when you have inner peace.",
