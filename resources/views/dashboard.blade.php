@@ -10,9 +10,28 @@
 						<?php	
 							$quoteList = array(
 									"\"One day, all your hard work will pay off.\"", 
-									"quote two", 
-									"quote three", 
-									"quote four"
+									"Nothing is impossible. The word itself says \"I'm possible!\"", 
+									"If I cannot do great things, I can do small things in a great way.", 
+									"The bad news is time flies. The good news is you're the pilot.",
+									"The best way to get started is to quit talking and begin doing.",
+									"Light tomorrow with today!",
+									"This time next year we will be millionaires!",
+									"Just keep swimming, just keep swimming!",
+									"Carpe diem. Seize the day. Make your life extraordinary.",
+									"To me, you are perfect.",
+									"Remember, no man is a failure who has friends.",
+									"If you want to win you cannot lose!",
+									"You will ride eternal, shiny and chrome."
+									"In every job that must be done there is an element of fun.",
+									"Even miracles take a little time.",
+									"Anything is possible when you have inner peace.",
+									"Oh yes, the past can hurt. But you can either run from it or learn from it.",
+									"Sometimes, the right path is not the easiest one.",
+									"Do or do not - there is no try.",
+									"All we have to decide is what to do with the time that is given to us.",
+									"It's not the broken dreams that break us. It's the ones we don't dare to dream.",
+									"Bazinga!",
+									" Witness me!"
 								);
 						?>
 							<h1><?php echo $quoteList[mt_rand(0, count($quoteList)-1)]; ?></h1>	
