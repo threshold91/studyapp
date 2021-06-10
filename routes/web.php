@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -26,9 +28,20 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/options', function () {
+    return view('options'); 
+});
+
+Route::get('/test', function () {
+    return view('test'); 
+});
 
 Route::get('/calendar', function () {
     return view('full-calender'); 
+});
+
+Route::get('/dashHome', function () {
+    return view('dashHome'); 
 });
 
 Route::get('/groups', function () {

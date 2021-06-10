@@ -44,14 +44,7 @@
 								<x-jet-input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" placeholder="Enter password" />				
 							</div>
 
-							<div class="form-group">
-								<div class="col form-check">
-									<label class="form-check-label">
-										<x-jet-checkbox id="remember_me" name="remember" />
-										<span class="form-check-input text-sm text-gray-600">{{ __('Remember me') }}</span>
-									</label>
-								</div>
-							</div>
+							
 						
 							<br>
 						
@@ -63,13 +56,18 @@
 								@endif
 								<x-jet-button type="submit" class="btn mt-3 mr-3" style="background-color: #a2d0c1; color:black!important"><b>{{ __('Login') }}</b></x-jet-button>
 							</div>
+
+							<div class="form-group"> 
+								@if (Route::has('register'))
+					
+									<a href="{{ route('register') }}">
+										<button type="button" class="btn btn-light mt-3 mr-3"><b>Register</b></button>
+									</a>
+								@endif
+							</div>
+
 						</form>	
-						@if (Route::has('register'))
-            
-							<a href="{{ route('register') }}">
-								<button type="button" class="btn btn-light mt-3 mr-3"><b>Register</b></button>
-							</a>
-							@endif
+						
 						
 					</div>
 		</div>

@@ -1,5 +1,3 @@
-@extends('defLayout')
-	@section('calendar')	
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 		<div class="container">
@@ -131,4 +129,3 @@
 		});
 		
 		</script>
-	@endsection	

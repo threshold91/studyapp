@@ -36,10 +36,10 @@
 					  <a class="nav-link" href="music">Music</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link " href="groups">Groups</a>
+					  <a class="nav-link" href="groups">Groups</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link " href="statistics">Statistics</a>
+					  <a class="nav-link" href="statistics">Statistics</a>
 					</li>
 			</ul>
 		</div>

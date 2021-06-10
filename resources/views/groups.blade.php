@@ -1,8 +1,5 @@
-@extends('defLayout')
-	@section('groups')
-		<div class="container-fluid">
-		<div class="row">
-			<div class="min-vh-100 col-sm-12  col-lg-12 col-xl-12 srednji" >
+
+			<div class="min-vh-100 col-sm-12 col-md-12 col-lg-12 col-xl-12 srednji" >
 				<div class="container">		
 					<div class="row">
 						<div class="col-10 mx-auto">
@@ -103,6 +100,4 @@
 					</div>
 				</div>					
 			</div>	
-		</div>
-		</div>
-	@endsection
+

@@ -1,105 +1,115 @@
-@extends('defLayout')
-	@section('statistics')
+
 	<div class="container-fluid">
 		<div class="row">
 
-			<div class="min-vh-100 col-sm-12  col-lg-12 col-xl-12  srednji">
-				<div class="container">		
-					<div class="row">
-						<div class="col-10 mx-auto">
-							<h1>“One day, all your hard work will pay off.”</h1>
-						
-							
-							<section id="s-team" class="section" style="padding-top:30px;">	
-								<div class="b-skills">
-									<div class="container">
-										<div class="row">
-											<div class="col-xs-12 col-sm-6 col-md-3">
-												<div class="skill-item center-block">
-													<div class="chart-container">
-														<div class="chart " data-percent="83" data-bar-color="#23afe3">
-															<span class="percent" data-after="%">83</span>
-														</div>
-													</div>
-
-													<p>WORK</p>
+		<div class="min-vh-100 col-sm-12  col-lg-12 col-xl-12 srednji">
+		<div class="container">		
+			<div class="row">
+				<div class="col-10 mx-auto">
+					<h1>“One day, all your hard work will pay off.”</h1>
+				
+					
+					<section id="s-team" class="section" style="padding-top:30px;   padding-bottom:20px;  ">	 <!--ovdje je dodan padding bottom -->
+						<div class="b-skills">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="83" data-bar-color="#a2d0c1" > <!--ovdje su se promijenile boje kruzne statistike-->
+													<span class="percent" data-after="%">83</span>
 												</div>
 											</div>
 
-											<div class="col-xs-12 col-sm-6 col-md-3">
-												<div class="skill-item center-block">
-													<div class="chart-container">
-														<div class="chart " data-percent="58" data-bar-color="#a7d212">
-															<span class="percent" data-after="%">58</span>
-														</div>
-													</div>
+											<p>WORK</p>
+										</div>
+									</div>
 
-													<p>SHORT BREAK</p>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="58" data-bar-color="#a2d0c1" > <!--ovdje su se promijenile boje kruzne statistike-->
+													<span class="percent" data-after="%">58</span>
 												</div>
 											</div>
 
-											<div class="col-xs-12 col-sm-6 col-md-3">
-												<div class="skill-item center-block">
-													<div class="chart-container">
-														<div class="chart " data-percent="35" data-bar-color="#edc214">
-															<span class="percent" data-after="%">35</span>
-														</div>
-													</div>
+											<p>SHORT BREAK</p>
+										</div>
+									</div>
 
-													<p>LONG BREAK</p>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="35" data-bar-color="#a2d0c1" > <!--ovdje su se promijenile boje kruzne statistike-->
+													<span class="percent" data-after="%">35</span>
 												</div>
 											</div>
 
-											<div class="col-xs-12 col-sm-6 col-md-3">
-												<div class="skill-item center-block">
-													<div class="chart-container">
-														<div class="chart " data-percent="15" data-bar-color="#ff4241">
-															<span class="percent" data-after="%">15</span>
-														</div>
-													</div>
+											<p>LONG BREAK</p>
+										</div>
+									</div>
 
-													<p>IDLE</p>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="skill-item center-block">
+											<div class="chart-container">
+												<div class="chart " data-percent="15" data-bar-color="#a2d0c1" > <!--ovdje su se promijenile boje kruzne statistike-->
+													<span class="percent" data-after="%">15</span>
 												</div>
 											</div>
+
+											<p>IDLE</p>
 										</div>
 									</div>
 								</div>
-							</section>
-							
-							<br>
-						
-							<div>
-								<p>Biology</p>
-								<div class="skil">
-								<div class="skills html">43%</div>
-								</div>
-
-								<p>Chemistry</p>
-								<div class="skil">
-								<div class="skills css">75%</div>
-								</div>
-
-								<p>Math</p>
-								<div class="skil">
-								<div class="skills js">65%</div>
-								</div>
-
-								<p>Programming</p>
-								<div class="skil">
-								<div class="skills php">54%</div>
-								</div>
-							<div>
-							
+							</div>
 						</div>
-					</div>
-				</div>					
+					</section>
+					
+					<br>
+				
+					<div> 		<!--svaki skup je dobio novi div i prikladnu klasu razmak  da se ljepše razdvoje-->
+						<div class="razmak">
+							<p>Biology</p>
+							<div class="skil">
+							  <div class="skills html">43%</div>
+							</div>						
+						</div>
+						
+						<div class="razmak">
+							<p>Chemistry</p>
+							<div class="skil">
+							  <div class="skills css">75%</div>
+							</div>
+						</div>
+						
+						<div class="razmak">
+							<p>Math</p>
+							<div class="skil">
+							  <div class="skills js">65%</div>
+							</div>
+						</div>
+
+						<div class="razmak">
+							<p>Programming</p>
+							<div class="skil">
+							  <div class="skills php">54%</div>
+							</div>
+						</div>
+					<div>
+					
+				</div>
 			</div>
+		</div>					
+	</div>
+	
+	
+	
+  </div>
 			
 			
 			
 		</div>
 	</div>
-	@endsection
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src="plugins/jquery-2.2.4.min.js"></script>
@@ -187,8 +197,3 @@ $(document).ready(function() {
 
 </script>
 
-
-
-
-
-</body>
